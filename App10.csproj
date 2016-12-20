@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6F7E497-10C9-4437-9190-45FF41A158F0}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App10</RootNamespace>
+    <AssemblyName>App10</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>App10_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>F17EC1BF8FB8B77E526AAE5C5008EE92EC4D7EBC</PackageCertificateThumbprint>
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Folder Include="Assets\NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage1.xaml.cs">
+      <DependentUpon>BlankPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage10.xaml.cs">
+      <DependentUpon>BlankPage10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage11.xaml.cs">
+      <DependentUpon>BlankPage11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage12.xaml.cs">
+      <DependentUpon>BlankPage12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage13.xaml.cs">
+      <DependentUpon>BlankPage13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage14.xaml.cs">
+      <DependentUpon>BlankPage14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage15.xaml.cs">
+      <DependentUpon>BlankPage15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage16.xaml.cs">
+      <DependentUpon>BlankPage16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage17.xaml.cs">
+      <DependentUpon>BlankPage17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage18.xaml.cs">
+      <DependentUpon>BlankPage18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage19.xaml.cs">
+      <DependentUpon>BlankPage19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage2.xaml.cs">
+      <DependentUpon>BlankPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage20.xaml.cs">
+      <DependentUpon>BlankPage20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage21.xaml.cs">
+      <DependentUpon>BlankPage21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage22.xaml.cs">
+      <DependentUpon>BlankPage22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage23.xaml.cs">
+      <DependentUpon>BlankPage23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage24.xaml.cs">
+      <DependentUpon>BlankPage24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage25.xaml.cs">
+      <DependentUpon>BlankPage25.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage26.xaml.cs">
+      <DependentUpon>BlankPage26.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage27.xaml.cs">
+      <DependentUpon>BlankPage27.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage28.xaml.cs">
+      <DependentUpon>BlankPage28.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage29.xaml.cs">
+      <DependentUpon>BlankPage29.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage30.xaml.cs">
+      <DependentUpon>BlankPage30.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage31.xaml.cs">
+      <DependentUpon>BlankPage31.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage32.xaml.cs">
+      <DependentUpon>BlankPage32.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage33.xaml.cs">
+      <DependentUpon>BlankPage33.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage34.xaml.cs">
+      <DependentUpon>BlankPage34.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage35.xaml.cs">
+      <DependentUpon>BlankPage35.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage36.xaml.cs">
+      <DependentUpon>BlankPage36.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage37.xaml.cs">
+      <DependentUpon>BlankPage37.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage38.xaml.cs">
+      <DependentUpon>BlankPage38.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage39.xaml.cs">
+      <DependentUpon>BlankPage39.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage4.xaml.cs">
+      <DependentUpon>BlankPage4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage40.xaml.cs">
+      <DependentUpon>BlankPage40.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage41.xaml.cs">
+      <DependentUpon>BlankPage41.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage42.xaml.cs">
+      <DependentUpon>BlankPage42.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage43.xaml.cs">
+      <DependentUpon>BlankPage43.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage44.xaml.cs">
+      <DependentUpon>BlankPage44.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage45.xaml.cs">
+      <DependentUpon>BlankPage45.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage46.xaml.cs">
+      <DependentUpon>BlankPage46.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage47.xaml.cs">
+      <DependentUpon>BlankPage47.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage48.xaml.cs">
+      <DependentUpon>BlankPage48.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage49.xaml.cs">
+      <DependentUpon>BlankPage49.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage5.xaml.cs">
+      <DependentUpon>BlankPage5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage50.xaml.cs">
+      <DependentUpon>BlankPage50.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage51.xaml.cs">
+      <DependentUpon>BlankPage51.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage52.xaml.cs">
+      <DependentUpon>BlankPage52.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage53.xaml.cs">
+      <DependentUpon>BlankPage53.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage54.xaml.cs">
+      <DependentUpon>BlankPage54.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage6.xaml.cs">
+      <DependentUpon>BlankPage6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage7.xaml.cs">
+      <DependentUpon>BlankPage7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage8.xaml.cs">
+      <DependentUpon>BlankPage8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage9.xaml.cs">
+      <DependentUpon>BlankPage9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="App10_StoreKey.pfx" />
+    <None Include="App10_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\1652_F-Block%2520Homework%2520Help.jpg" />
+    <Content Include="Assets\Activated_Carbon.jpg" />
+    <Content Include="Assets\Aluminium-4.jpg" />
+    <Content Include="Assets\Antimony_massive.jpg" />
+    <Content Include="Assets\Argon.jpg" />
+    <Content Include="Assets\Arrow.png" />
+    <Content Include="Assets\arsenic.jpg" />
+    <Content Include="Assets\Astatine.jpg" />
+    <Content Include="Assets\Barium.jpg" />
+    <Content Include="Assets\Beryllium.jpg" />
+    <Content Include="Assets\bismuth.jpg" />
+    <Content Include="Assets\Boron.jpg" />
+    <Content Include="Assets\bromine-3.jpg" />
+    <Content Include="Assets\bromine.png" />
+    <Content Include="Assets\Caesium.jpg" />
+    <Content Include="Assets\Calcium.jpg" />
+    <Content Include="Assets\CHEM.jpg" />
+    <Content Include="Assets\chemistry.jpg" />
+    <Content Include="Assets\Chlorine.jpg" />
+    <Content Include="Assets\disciplines-Eng-blue.jpg" />
+    <Content Include="Assets\fblock.gif" />
+    <Content Include="Assets\Francium.jpg" />
+    <Content Include="Assets\Gallium_kristallisiert.jpg" />
+    <Content Include="Assets\Helium.jpg" />
+    <Content Include="Assets\Hydrogen-L.jpg" />
+    <Content Include="Assets\IH375-Fluorine.jpg" />
+    <Content Include="Assets\imagesNTCWNHVK.jpg" />
+    <Content Include="Assets\imagesPQEGHQCZ.jpg" />
+    <Content Include="Assets\Indium_wetting_glass.jpg" />
+    <Content Include="Assets\Iodine.gif" />
+    <Content Include="Assets\Krypton.jpg" />
+    <Content Include="Assets\lead-cut.jpg" />
+    <Content Include="Assets\Lithium.jpg" />
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\Neon.jpg" />
+    <Content Include="Assets\New Bitmap Image.bmp" />
+    <Content Include="Assets\Nitrogen-glow.jpg" />
+    <Content Include="Assets\oxygen.jpg" />
+    <Content Include="Assets\P-block.png" />
+    <Content Include="Assets\Phosphorus%2520.jpg" />
+    <Content Include="Assets\polonium.jpg" />
+    <Content Include="Assets\Polycrystalline-germanium.jpg" />
+    <Content Include="Assets\Potassium.jpg" />
+    <Content Include="Assets\Radon-element-e1382118490555.jpg" />
+    <Content Include="Assets\Rb.jpg" />
+    <Content Include="Assets\rádium.jpg" />
+    <Content Include="Assets\S-block.png" />
+    <Content Include="Assets\SiliconCroda.jpg" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\Sodium.jpg" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\Strontium_destilled_crystals.jpg" />
+    <Content Include="Assets\sulphur.jpg" />
+    <Content Include="Assets\tellurium32531a.jpg" />
+    <Content Include="Assets\Thallium_rod_corroded.jpg" />
+    <Content Include="Assets\Tin-2.jpg" />
+    <Content Include="Assets\Transition_Metals_Periodic_table.jpg" />
+    <Content Include="Assets\xenon-ion.jpg" />
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="BlankPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage11.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage12.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage13.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage14.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage15.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage16.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage17.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage18.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage19.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage20.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage21.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage22.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage23.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage24.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage25.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage26.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage27.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage28.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage29.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage30.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage31.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage32.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage33.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage34.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage35.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage36.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage37.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage38.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage39.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage40.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage41.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage42.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage43.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage44.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage45.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage46.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage47.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage48.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage49.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage50.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage51.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage52.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage53.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage54.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

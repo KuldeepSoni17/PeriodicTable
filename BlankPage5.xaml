@@ -1,0 +1,65 @@
+﻿<Page
+    x:Class="App10.BlankPage5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App10"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFE8E6C6" Margin="-1,0,1,0">
+        <TextBlock HorizontalAlignment="Left" Margin="145,42,0,0" TextWrapping="Wrap" Text="Periodic table" VerticalAlignment="Top" Height="68" Width="250" FontSize="48" FontFamily="Buxton Sketch" FontWeight="Bold" >
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF8000FF" Offset="0.098"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Image HorizontalAlignment="Left" Height="68" Margin="35,42,0,0" VerticalAlignment="Top" Width="62" Source="Assets/New Bitmap Image.bmp"/>
+        <Button x:Name="Goback1" Content="Go Back" HorizontalAlignment="Left" Margin="1150,37,0,0" VerticalAlignment="Top" Height="54" Width="179" FontSize="25" Foreground="White" BorderBrush="#FFF30808" Click="Goback1_Click" Background="#FFBB2929" />
+        <TextBlock HorizontalAlignment="Left" Margin="442,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="308" Foreground="#FFF01313" FontSize="36">
+        	<Run Text="S-block"/>
+        	<Run Text=" elements"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="29,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="485" Width="1042" FontSize="35" Foreground="Red">
+        	<Run Text="The Chemical elements having their outermost eletron in S-orbital are called S-block elements."/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="The S-block elements are divided into Two groups:-"/>
+        	<LineBreak/>
+        	<Run Text="(a) Alkali metals(Li Group)"/>
+        	<LineBreak/>
+        	<Run Text="(b) Alkaline Earth metals(Be Group)"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="Helium and Hydrogen are also included in S-block."/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="All the elements in S-block are metals except Hydrogen and "/>
+        	<Run Text="Helium."/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <Image HorizontalAlignment="Left" Height="533" Margin="1133,211,0,0" VerticalAlignment="Top" Width="169" Source="Assets/S-block.png" RenderTransformOrigin="0.662,0.52"/>
+        <Button Content="Li&#xA;" HorizontalAlignment="Left" Margin="1151,237,0,0" VerticalAlignment="Top" Height="43" Background="#FFD82424" FontSize="20" Click="Button_Click_1"/>
+        <Button Content="K&#xA;" HorizontalAlignment="Left" Margin="1151,410,0,0" VerticalAlignment="Top" Height="43" Background="#FFD82424" FontSize="20" Click="Button_Click_5"/>
+        <Button Content="Na" HorizontalAlignment="Left" Margin="1142,327,0,0" VerticalAlignment="Top" Height="50" Background="#FFD82424" FontSize="20" Width="62" Click="Button_Click_4"/>
+        <Button Content="Cs&#xA;" HorizontalAlignment="Left" Margin="1144,579,0,0" VerticalAlignment="Top" Height="42" Background="#FFD82424" FontSize="20" Click="Button_Click_7"/>
+        <Button Content="Ba&#xA;" HorizontalAlignment="Left" Margin="1213,577,0,0" VerticalAlignment="Top" Height="42" Background="#FFD82424" FontSize="20" RenderTransformOrigin="0.632,0.595" Click="Button_Click_13"/>
+        <Button Content="Fr&#xA;" HorizontalAlignment="Left" Margin="1147,664,0,0" VerticalAlignment="Top" Height="42" Background="#FFD82424" FontSize="20" Click="Button_Click_8"/>
+        <Button Content="Ca&#xA;" HorizontalAlignment="Left" Margin="1214,407,0,0" VerticalAlignment="Top" Height="43" Background="#FFD82424" FontSize="20" Click="Button_Click_11"/>
+        <Button Content="Ra&#xA;" HorizontalAlignment="Left" Margin="1215,664,0,0" VerticalAlignment="Top" Height="42" Background="#FFD82424" FontSize="20" Click="Button_Click_14"/>
+        <Button Content="Sr&#xA;" HorizontalAlignment="Left" Margin="1217,494,0,0" VerticalAlignment="Top" Height="43" Background="#FFD82424" FontSize="20" Click="Button_Click_12"/>
+        <Button Content="Mg&#xA;" HorizontalAlignment="Left" Margin="1209,327,0,0" VerticalAlignment="Top" Height="52" Background="#FFD82424" FontSize="20" Click="Button_Click_10"/>
+        <Button Content="Be" HorizontalAlignment="Left" Margin="1217,237,0,0" VerticalAlignment="Top" Height="43" Background="#FFD82424" FontSize="20" Click="Button_Click_9"/>
+        <Button Content="Rb&#xA;" HorizontalAlignment="Left" Margin="1141,497,0,0" VerticalAlignment="Top" Height="43" Background="#FFD82424" FontSize="20" Click="Button_Click_6"/>
+        <Button Content="H&#xA;" HorizontalAlignment="Left" Margin="1139,121,0,0" VerticalAlignment="Top" Height="42" Background="#FFD82424" FontSize="20" Click="Button_Click_2"/>
+        <Button Content="He&#xA;" HorizontalAlignment="Left" Margin="1222,120,0,0" VerticalAlignment="Top" Height="42" Background="#FFD82424" FontSize="20" Click="Button_Click_3"/>
+        <HyperlinkButton Content="Know More About S-block" HorizontalAlignment="Left" Margin="220,688,0,0" VerticalAlignment="Top" Height="63" Width="480" Background="#FFEE1919" Foreground="#FFECE9F3" FontSize="24" NavigateUri="https://www.princeton.edu/~achaney/tmve/wiki100k/docs/S-block.html"/>
+
+    </Grid>
+</Page>
